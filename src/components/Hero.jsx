@@ -1,3 +1,5 @@
+import ButtonPrimary from "./Button";
+
 const Hero = () => {
   return (
     <section
@@ -29,14 +31,17 @@ const Hero = () => {
                 Building Scalable Modern Websites for the Future
                 </h2>
                 <div className="flex items-center gap-3">
-                    Button Primary
+                    <ButtonPrimary
+                    label='Download CV'
+                    icon='download'
+                    />
 
                     Button Outline
                 </div>
             </div>
 
             <div className="hidden lg:block">
-                <figure className="">
+                <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400 to-65% rounded-[60px] overflow-hidden">
                     <img 
                     src="/images/hero-banner.png"
                     width={656}
